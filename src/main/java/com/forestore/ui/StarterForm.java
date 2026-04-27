@@ -8,7 +8,7 @@ import com.forestore.model.Factura;
 public class StarterForm extends JFrame {
 
     //  Arreglo de productos
-    private Producto[] productos = new Producto[3];
+    private Producto[] productos = new Producto[5];
     private int cont = 0;
 
     // Componentes
@@ -43,7 +43,7 @@ public class StarterForm extends JFrame {
         JPanel panelForm = new JPanel(new GridLayout(4, 2, 10, 12));//Jpanel es una caja invisible y GridLayou hace cuadricula perfecta
         panelForm.setBorder(BorderFactory.createEmptyBorder(10, 40, 10, 40));
 
-        lblPaso = new JLabel("Producto 1 de 3");
+        lblPaso = new JLabel("Producto 1 de 5");
         lblPaso.setFont(new Font("Arial", Font.ITALIC, 13));
         panelForm.add(lblPaso);
         panelForm.add(new JLabel()); //Salta a la fila 2
@@ -125,11 +125,11 @@ public class StarterForm extends JFrame {
         // Mostrar botón Saltar en cuanto hay al menos 1 producto
         btnSaltar.setVisible(true);
 
-        if (cont < 3) {
+        if (cont < 5) {
             limpiarCampos();
-            lblPaso.setText("Producto " + (cont + 1) + " de 3"); //Actualiza titulo segun el producto que pongas
+            lblPaso.setText("Producto " + (cont + 1) + " de 5"); //Actualiza titulo segun el producto que pongas
 
-            if (cont == 2) {
+            if (cont == 4) {
                 btnSiguiente.setText("Ver Factura ✓");
             }
         } else {
