@@ -48,7 +48,7 @@ public class StarterForm extends JFrame {
         panelForm.add(lblPaso);
         panelForm.add(new JLabel()); //Salta a la fila 2
 
-        panelForm.add(new JLabel("Nombre:"));
+        panelForm.add(new JLabel("Nombre del producto:"));
         txtNombre = new JTextField();
         panelForm.add(txtNombre);
 
