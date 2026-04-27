@@ -13,9 +13,9 @@ public class Factura {
 
     public double calcularSubTotal() {
         subtotal = 0;
-        for (int i = 0; i < productos.length; i++) {       // recorre el arreglo
+        for (int i = 0; i < productos.length; i++) {       // bucle
             if (productos[i] != null) {
-                subtotal += productos[i].calcularPrecioTotal();
+                subtotal += productos[i].calcularPrecioTotal(); // La sumatoria
             }
         }
         return subtotal;
